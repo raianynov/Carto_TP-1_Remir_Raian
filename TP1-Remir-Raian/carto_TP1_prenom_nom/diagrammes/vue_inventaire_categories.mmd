@@ -1,0 +1,36 @@
+---
+title: Vue inventaire des actifs ADS par categorie
+---
+%% Classification transversale des actifs par TYPE (independamment des zones).
+flowchart LR
+
+    ROOT["SI - Air Defense System<br/>(ADS)"]
+
+    ROOT --> SRV["SERVEURS"]
+    ROOT --> NET["EQUIPEMENTS RESEAU"]
+    ROOT --> USR["POSTES UTILISATEURS"]
+    ROOT --> SVC["SERVICES CRITIQUES"]
+
+    %% --- Serveurs ---
+    SRV --> SRV_ADS["Zone ADS<br/>c4i-ads, mil-ads,<br/>map-ads, wpn-ads"]
+    SRV --> SRV_INT["Zone INT<br/>dc1, dc2, files, mail, sql,<br/>wsus, reports, hq-gsc<br/>+ siem x3"]
+    SRV --> SRV_BG["Zone BG<br/>radar-ads, bg-gsc"]
+
+    %% --- Reseau ---
+    NET --> FW["Pare-feux<br/>fw-ads, fw-int, fw-bg"]
+    NET --> VPN["VPN<br/>vpn-ads (10.10.9.36)"]
+
+    %% --- Utilisateurs ---
+    USR --> U_ADS["Utilisateurs ADS<br/>10.10.9.250-254"]
+    USR --> U_INT["ws1 / ws2 / ws3<br/>10.10.8.31-45"]
+    USR --> U_BG["Utilisateurs BG<br/>10.10.12.250-254"]
+
+    %% --- Services critiques ---
+    SVC --> SVC1["Commandement C4I<br/>(c4i-ads)"]
+    SVC --> SVC2["Armement<br/>(wpn-ads)"]
+    SVC --> SVC3["Detection radar<br/>(radar-ads)"]
+    SVC --> SVC4["Annuaire AD<br/>(dc1 / dc2)"]
+    SVC --> SVC5["Supervision securite<br/>(SIEM)"]
+
+    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
+    class SVC1,SVC2,SVC3 crit;
