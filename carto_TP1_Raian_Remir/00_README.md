@@ -60,6 +60,11 @@ La liste complète avec les adresses se trouve dans [`03_inventaire_actifs.md`](
 
 ## Comment visualiser les diagrammes
 
-Les diagrammes sont en **Mermaid** et s'affichent automatiquement dans [`02_cartographies.md`](02_cartographies.md)
-sur tout lecteur Markdown compatible (GitHub, VS Code avec l'extension Mermaid, Obsidian…).
-Aucune dépendance externe n'est nécessaire.
+Les diagrammes et les fichiers sont tous visibles sur Github.
+
+
+
+
+
+
+saire.
