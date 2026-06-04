@@ -20,9 +20,7 @@ réseau et derrière son propre pare-feu —
 indique immédiatement sa zone (préfixe `10.10.9` = ADS, `10.10.8` = INT, `10.10.12` = BG).
 La liste complète avec les adresses se trouve dans [`03_inventaire_actifs.md`](03_inventaire_actifs.md).
 
-> Périmètre : ce livrable porte sur les **actifs uniquement**. Les flux réseau et les
-> règles de sécurité ne sont pas traités ici (ils relèvent du TP2).
-
+> Périmètre : ce livrable porte sur les **actifs uniquement**. Pour les flux réseaux, consulter [`00_README.md`](../carto_TP2_Raian_Remir/00_README.md)
 ## Glossaire des sigles
 
 | Sigle | Signification |
