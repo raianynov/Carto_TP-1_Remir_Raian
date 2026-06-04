@@ -1,7 +1,7 @@
-# Cartographies des flux et des zones — Système ADS (TP2)
+# Cartographies des flux et des zones — Air Defense System (ADS)
 
-> Représentations visuelles accompagnant l'analyse ([`01_analyse_flux_zones.md`](01_analyse_flux_zones.md)).
-> Séparation claire entre **flux** (vues 1 et 2) et **zones de confiance** (vue 3).
+> Représentations visuelles accompagnant la documentation ([`01_analyse_flux_zones.md`](01_analyse_flux_zones.md)).
+> Flux (vues 1 et 2) et zones de confiance (vue 3) sont présentés séparément.
 > Sources éditables dans `diagrammes/`.
 
 ---
@@ -13,7 +13,7 @@ Source : [`diagrammes/vue_flux_composants.mmd`](diagrammes/vue_flux_composants.m
 
 ```mermaid
 %% Vue FLUX : communications entre composants, sens, protocoles et ports.
-%% Source : flux du contexte ADS + flux obligatoires de l'enonce TP2.
+%% Source : flux operationnels et administratifs du systeme ADS.
 flowchart LR
 
     RADAR["radar-ads<br/>(BG) 10.10.12.33"]
