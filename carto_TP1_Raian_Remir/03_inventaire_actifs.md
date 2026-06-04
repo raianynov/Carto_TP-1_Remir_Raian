@@ -3,9 +3,7 @@
 > Recensement exhaustif des actifs du SI, organisé par zone.
 > Source : document de contexte *Air Defense System (ADS)*.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`01_analyse.md`](01_analyse.md) (organisation du SI) ·
-> [`02_cartographies.md`](02_cartographies.md) (schémas).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire), [`01_analyse.md`](01_analyse.md) (organisation du SI) et [`02_cartographies.md`](02_cartographies.md) (schémas).
 
 ---
 
