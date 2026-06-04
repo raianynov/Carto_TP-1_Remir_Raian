@@ -7,7 +7,7 @@ config:
 ---
 %% Vue physique : rattachement des actifs a leur reseau et au pare-feu de zone.
 %% Cartographie des ACTIFS uniquement (TP1) - les flux relevent du TP2.
-%% Ordre des zones : BG (non fiable) -> INT (confiance) -> ADS (critique).
+%% Ordre des zones : BG -> INT -> ADS.
 flowchart LR
 
     subgraph BG["Zone BG - 10.10.12.0/24 (NON FIABLE)"]
@@ -47,9 +47,7 @@ flowchart LR
     FWBG -.maillage filtre.- FWINT
     FWINT -.maillage filtre.- FWADS
 
-    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
     classDef fw fill:#000,stroke:#f87171,color:#fff,stroke-width:2px;
     classDef net fill:#374151,stroke:#9ca3af,color:#fff;
-    class C4I,WPN,RADAR crit;
     class FWBG,FWINT,FWADS fw;
     class SWBG,SWINT,SWADS net;

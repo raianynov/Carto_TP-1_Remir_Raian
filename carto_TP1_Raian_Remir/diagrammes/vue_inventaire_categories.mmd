@@ -29,8 +29,4 @@ flowchart LR
     SVC --> SVC1["Commandement C4I<br/>(c4i-ads)"]
     SVC --> SVC2["Armement<br/>(wpn-ads)"]
     SVC --> SVC3["Detection radar<br/>(radar-ads)"]
-    SVC --> SVC4["Annuaire AD<br/>(dc1 / dc2)"]
-    SVC --> SVC5["Supervision securite<br/>(SIEM)"]
-
-    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
-    class SVC1,SVC2,SVC3 crit;
+    SVC --> SVC4["Liaison VPN<br/>radar - armement<br/>(vpn-ads)"]

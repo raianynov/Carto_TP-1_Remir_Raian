@@ -1,15 +1,18 @@
 # Cartographies des actifs — Système ADS
 
-> Représentations visuelles accompagnant l'analyse (`01_analyse.md`).
+> Représentations visuelles accompagnant l'analyse ([`01_analyse.md`](01_analyse.md)).
 > Trois vues complémentaires, toutes en **Mermaid** (sources éditables dans `diagrammes/`).
 > Périmètre TP1 : actifs uniquement — les flux relèvent du TP2.
+>
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
+> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
 
 ---
 
-## Vue 1 — Vue logique par zones de confiance
+## Vue 1 — Vue logique par zones
 
 **Objectif :** organisation des actifs par zone (ADS / INT / BG) et regroupement logique (infrastructure, SIEM, postes).
-Source : `diagrammes/vue_logique_zones.mmd`
+Source : [`diagrammes/vue_logique_zones.mmd`](diagrammes/vue_logique_zones.mmd)
 
 ```mermaid
 %% Cartographie des ACTIFS uniquement (TP1) - les flux relevent du TP2.
@@ -64,9 +67,7 @@ flowchart TB
     FWINT -.maillage filtre.- FWBG
     FWADS -.maillage filtre.- FWBG
 
-    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
     classDef fw fill:#000,stroke:#f87171,color:#fff,stroke-width:2px;
-    class C4I,WPN crit;
     class FWADS,FWINT,FWBG fw;
 ```
 
@@ -75,7 +76,7 @@ flowchart TB
 ## Vue 2 — Vue inventaire par catégorie d'actif
 
 **Objectif :** classification transversale par type (serveurs, réseau, utilisateurs, services), indépendamment des zones.
-Source : `diagrammes/vue_inventaire_categories.mmd`
+Source : [`diagrammes/vue_inventaire_categories.mmd`](diagrammes/vue_inventaire_categories.mmd)
 
 ```mermaid
 %% Classification transversale des actifs par TYPE (independamment des zones).
@@ -106,11 +107,7 @@ flowchart LR
     SVC --> SVC1["Commandement C4I<br/>(c4i-ads)"]
     SVC --> SVC2["Armement<br/>(wpn-ads)"]
     SVC --> SVC3["Detection radar<br/>(radar-ads)"]
-    SVC --> SVC4["Annuaire AD<br/>(dc1 / dc2)"]
-    SVC --> SVC5["Supervision securite<br/>(SIEM)"]
-
-    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
-    class SVC1,SVC2,SVC3 crit;
+    SVC --> SVC4["Liaison VPN<br/>radar - armement<br/>(vpn-ads)"]
 ```
 
 ---
@@ -118,12 +115,12 @@ flowchart LR
 ## Vue 3 — Vue physique / réseau
 
 **Objectif :** rattachement de chaque actif à son réseau et à son pare-feu de zone (lecture « infrastructure »).
-Source : `diagrammes/vue_physique.mmd`
+Source : [`diagrammes/vue_physique.mmd`](diagrammes/vue_physique.mmd)
 
 ```mermaid
 %% Vue physique : rattachement des actifs a leur reseau et au pare-feu de zone.
 %% Cartographie des ACTIFS uniquement (TP1) - les flux relevent du TP2.
-%% Ordre des zones : BG (non fiable) -> INT (confiance) -> ADS (critique).
+%% Ordre des zones : BG -> INT -> ADS.
 flowchart LR
 
     subgraph BG["Zone BG - 10.10.12.0/24 (NON FIABLE)"]
@@ -163,10 +160,8 @@ flowchart LR
     FWBG -.maillage filtre.- FWINT
     FWINT -.maillage filtre.- FWADS
 
-    classDef crit fill:#7f1d1d,stroke:#fca5a5,color:#fff;
     classDef fw fill:#000,stroke:#f87171,color:#fff,stroke-width:2px;
     classDef net fill:#374151,stroke:#9ca3af,color:#fff;
-    class C4I,WPN,RADAR crit;
     class FWBG,FWINT,FWADS fw;
     class SWBG,SWINT,SWADS net;
 ```
@@ -175,7 +170,8 @@ flowchart LR
 
 ## Note de lecture
 
-- **Code couleur des actifs** : rouge = actif critique/vital · noir = pare-feu · gris = segment réseau. Les actifs non colorés sont de criticité moindre.
-- **Niveau de confiance des zones** : indiqué dans le titre de chaque zone (CRITIQUE / DE CONFIANCE / NON FIABLE).
+- **Code couleur** : noir = pare-feu · gris = segment réseau. Les autres actifs ne sont pas colorés.
+- **Niveau de confiance des zones** : indiqué dans le titre de chaque zone (CRITIQUE / DE CONFIANCE / NON FIABLE), tel que désigné par le contexte.
+- **Services critiques** (vue inventaire) : commandement C4I, armement, détection radar et liaison VPN radar–armement.
 - **Hexagones** `{{ }}` (vue physique) = pare-feux ; **pointillés** = maillage entre pare-feux (élément structurel ; détail des flux en TP2).
 - Aucune adresse IP n'a été inventée : les serveurs INT sans IP fournie sont indiqués comme tels.
