@@ -5,10 +5,7 @@
 > et une **vue fonctionnelle** (les capacités du système). Elles ne décrivent pas les
 > machines : la correspondance avec les actifs concrets est donnée en fin de document.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`01_analyse.md`](01_analyse.md) (analyse des actifs) ·
-> [`02_cartographies.md`](02_cartographies.md) (vues techniques) ·
-> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire), [`01_analyse.md`](01_analyse.md) (analyse des actifs), [`02_cartographies.md`](02_cartographies.md) (vues techniques) et [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire).
 
 ---
 
@@ -91,8 +88,6 @@ flowchart TB
     class P1,P2,P3,P4,P5,P6 proc;
     class PS strat;
 ```
-
----
 
 ## 2. Vue fonctionnelle
 
@@ -208,9 +203,6 @@ flowchart LR
     class APP appui;
     class SUPPORT,SECU bloc;
 ```
-
----
-
 ## 3. Correspondance fonction → actif
 
 Ce tableau relie les fonctions de la vue fonctionnelle aux actifs concrets de l'inventaire.
@@ -244,8 +236,6 @@ Il fait le lien entre ce document et la cartographie des actifs ([`03_inventaire
 > coordonne le terrain et relaie la situation vers le commandement, tandis que `hq-gsc`
 > (zone INT) assure la coordination centrale du dispositif. Ils n'exécutent pas la décision
 > d'interception (qui revient à `c4i-ads`) mais orchestrent la circulation de l'information.
-
----
 
 ## 4. Articulation des deux vues
 
