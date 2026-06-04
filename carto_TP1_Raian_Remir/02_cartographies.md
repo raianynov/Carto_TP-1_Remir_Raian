@@ -172,5 +172,5 @@ flowchart LR
 - **Code couleur** : noir = pare-feu · gris = segment réseau. Les autres actifs ne sont pas colorés.
 - **Niveau de confiance des zones** : indiqué dans le titre de chaque zone (CRITIQUE / DE CONFIANCE / NON FIABLE), tel que désigné par le contexte.
 - **Services critiques** (vue inventaire) : commandement C4I, armement, détection radar et liaison VPN radar–armement.
-- **Hexagones** `{{ }}` (vue physique) = pare-feux ; **pointillés** = maillage entre pare-feux (élément structurel ; détail des flux en TP2).
+- **Hexagones** (vue physique) = pare-feux ; **pointillés** = maillage entre pare-feux (élément structurel ; détail des flux en TP2).
 - Aucune adresse IP n'a été inventée : les serveurs INT sans IP fournie sont indiqués comme tels.
