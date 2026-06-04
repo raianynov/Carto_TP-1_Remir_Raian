@@ -4,8 +4,7 @@
 > Trois vues complémentaires, toutes en **Mermaid** (sources éditables dans `diagrammes/`).
 > Périmètre : actifs uniquement. Les flux réseau sont documentés séparément.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) et [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
 
 ---
 
