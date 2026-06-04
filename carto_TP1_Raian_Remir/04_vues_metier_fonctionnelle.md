@@ -5,10 +5,7 @@
 > et une **vue fonctionnelle** (les capacités du système). Elles ne décrivent pas les
 > machines : la correspondance avec les actifs concrets est donnée en fin de document.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`01_analyse.md`](01_analyse.md) (analyse des actifs) ·
-> [`02_cartographies.md`](02_cartographies.md) (vues techniques) ·
-> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire), [`01_analyse.md`](01_analyse.md) (analyse des actifs), [`02_cartographies.md`](02_cartographies.md) (vues techniques) et [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire).
 
 ---
 
