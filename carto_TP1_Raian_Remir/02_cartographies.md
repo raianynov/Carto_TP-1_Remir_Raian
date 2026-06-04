@@ -2,10 +2,8 @@
 
 > Représentations visuelles accompagnant l'analyse ([`01_analyse.md`](01_analyse.md)).
 > Trois vues complémentaires, toutes en **Mermaid** (sources éditables dans `diagrammes/`).
-> Périmètre TP1 : actifs uniquement — les flux relèvent du TP2.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) et [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
 
 ---
 
@@ -71,8 +69,6 @@ flowchart TB
     class FWADS,FWINT,FWBG fw;
 ```
 
----
-
 ## Vue 2 — Vue inventaire par catégorie d'actif
 
 **Objectif :** classification transversale par type (serveurs, réseau, utilisateurs, services), indépendamment des zones.
@@ -109,8 +105,6 @@ flowchart LR
     SVC --> SVC3["Detection radar<br/>(radar-ads)"]
     SVC --> SVC4["Liaison VPN<br/>radar - armement<br/>(vpn-ads)"]
 ```
-
----
 
 ## Vue 3 — Vue physique / réseau
 
