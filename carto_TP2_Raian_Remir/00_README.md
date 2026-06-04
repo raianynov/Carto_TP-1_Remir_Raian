@@ -59,6 +59,7 @@ zones, mêmes adresses ; seules les interactions sont ajoutées ici.
 
 ## Visualisation des diagrammes
 
-Les diagrammes sont en **Mermaid** et s'affichent automatiquement dans
-[`02_cartographies.md`](02_cartographies.md) sur tout lecteur Markdown compatible (GitHub,
-VS Code avec l'extension Mermaid, Obsidian…). Aucune dépendance externe.
+Les diagrammes et les fichiers sont visibles depuis Github.
+
+
+
