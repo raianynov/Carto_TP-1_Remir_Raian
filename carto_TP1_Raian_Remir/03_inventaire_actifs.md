@@ -3,9 +3,7 @@
 > Recensement exhaustif des actifs du SI, organisé par zone.
 > Source : document de contexte *Air Defense System (ADS)*.
 >
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`01_analyse.md`](01_analyse.md) (organisation du SI) ·
-> [`02_cartographies.md`](02_cartographies.md) (schémas).
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire), [`01_analyse.md`](01_analyse.md) (organisation du SI) et [`02_cartographies.md`](02_cartographies.md) (schémas).
 
 ---
 
@@ -16,8 +14,6 @@
 | **ADS** | Système de défense (opérationnel, temps réel) | `10.10.9.0/24` | `fw-ads` — `100.97.10.114` |
 | **INT** | Système d'information interne d'entreprise | `10.10.8.0/24` | `fw-int` — `100.97.10.115` |
 | **BG**  | Border Guard (terrain opérationnel) | `10.10.12.0/24` | `fw-bg` — `100.97.10.242` |
-
----
 
 ## Zone ADS — Système de défense (`10.10.9.0/24`)
 
@@ -68,8 +64,6 @@
 | `radar-ads` | `10.10.12.33` | Serveur / capteur | Système radar de détection aérienne |
 | `bg-gsc` | `10.10.12.64` | Serveur | Centre de contrôle local |
 | Utilisateurs BG | `10.10.12.250 – 10.10.12.254` | Postes utilisateurs | Opérateurs terrain |
-
----
 
 ## Synthèse quantitative
 
