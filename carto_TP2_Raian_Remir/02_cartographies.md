@@ -126,5 +126,5 @@ flowchart TB
 
 - **Flèches pleines** = flux ou interconnexions ; **étiquettes** = protocole/port quand connu.
 - **Pointillés** = liens spécifiques (tunnel VPN, flux inter-zone passant par les pare-feux).
-- **Hexagones** `{{ }}` = pare-feux ; **rouge** = cœur `c4i-ads`.
+- **Hexagones** = pare-feux ; **rouge** = cœur `c4i-ads`.
 - Les ports ne sont indiqués que lorsqu'ils sont fournis par le contexte.
