@@ -3,11 +3,8 @@
 > **TP1 — Cartographie des actifs du SI**
 > Document d'analyse écrite. Les cartographies associées sont fournies dans
 > [`02_cartographies.md`](02_cartographies.md), avec les sources Mermaid dans `diagrammes/`.
-> Conformément au périmètre du TP1, ce document porte **uniquement sur les actifs** :
-> les flux, règles de filtrage et communications inter-zones relèvent du TP2.
->
-> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) ·
-> [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
+
+> Voir aussi : [`00_README.md`](00_README.md) (vue d'ensemble et glossaire) et [`03_inventaire_actifs.md`](03_inventaire_actifs.md) (inventaire détaillé).
 
 ---
 
@@ -19,8 +16,6 @@ réseau, postes utilisateurs, services). Le SI est d'abord présenté zone par z
 zone étant définie par son utilité, son contenu et sa place dans l'architecture — puis les
 actifs sont localisés précisément. L'inventaire complet (nom, IP, type, rôle) figure dans
 [`03_inventaire_actifs.md`](03_inventaire_actifs.md).
-
----
 
 ## 2. Structuration globale
 
@@ -47,8 +42,6 @@ que le contexte considère comme non fiable. Ainsi, un problème survenant dans 
 (par exemple une compromission côté terrain) ne se propage pas directement aux autres : le
 pare-feu de chaque zone agit comme une barrière. C'est ce principe de segmentation qui
 structure tout le reste de la cartographie.
-
----
 
 ## 3. Définition des zones
 
@@ -126,8 +119,6 @@ la zone à laquelle on accorde le moins de confiance.
 | `bg-gsc` | `10.10.12.64` | Centre de contrôle local de la zone. |
 | Postes utilisateurs BG | `10.10.12.250` à `10.10.12.254` | Opérateurs de terrain. |
 
----
-
 ## 4. Classification transversale des actifs
 
 Indépendamment des zones, les actifs se répartissent en quatre catégories :
@@ -146,8 +137,6 @@ défense — sont : le **commandement C4I** (`c4i-ads`), l'**armement** (`wpn-ad
 sécurité (SIEM), bien qu'importants pour le fonctionnement du SI interne, ne sont pas
 classés comme critiques pour la mission opérationnelle.
 
----
-
 ## 5. Justification des choix de représentation
 
 Trois vues complémentaires ont été produites, car aucune représentation unique ne couvre
@@ -161,13 +150,6 @@ l'ensemble des attendus de manière lisible.
 - **Vue physique / réseau** : rattache chaque actif à son segment réseau, lui-même relié
   au pare-feu de sa zone ; elle met en évidence le découpage réseau et le rôle de point de
   passage des pare-feux.
-
-Deux choix transverses : les **flux ne sont pas tracés** (ils relèvent du TP2 ; seul le
-maillage des pare-feux figure, comme élément de structure), et **aucune adresse IP n'a été
-inventée** — les serveurs INT sans IP fournie sont indiqués comme tels, par fidélité au
-contexte.
-
----
 
 ## 6. Synthèse
 
