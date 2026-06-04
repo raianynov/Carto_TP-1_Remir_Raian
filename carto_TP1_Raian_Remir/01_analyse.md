@@ -1,7 +1,7 @@
 # Architecture des actifs — Air Defense System (ADS)
 
 > Documentation de l'architecture du système ADS, côté actifs.
-> Cartographies associées : [`02_cartographies.md`](02_cartographies.md) · inventaire complet : [`03_inventaire_actifs.md`](03_inventaire_actifs.md) · glossaire : [`00_README.md`](00_README.md).
+> Cartographies associées : [`02_cartographies.md`](02_cartographies.md), inventaire complet : [`03_inventaire_actifs.md`](03_inventaire_actifs.md) et Glossaire : [`00_README.md`](00_README.md).
 > Les flux réseau et les règles de filtrage sont documentés séparément.
 
 ---
